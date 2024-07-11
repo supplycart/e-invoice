@@ -21,12 +21,11 @@
         "ext-curl": "*",
         "ext-json": "*",
         "sabre/xml": "^4.0",
-        "psr/http-client": "^1.0",
-        "spatie/laravel-data": "^3.0"
+        "psr/http-client": "^1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^10.5",
-        "friendsofphp/php-cs-fixer": "^3.59",
-        "spatie/ray": "^1.41"
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "spatie/ray": "^1.0"
     }
 }
