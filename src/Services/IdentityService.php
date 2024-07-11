@@ -9,25 +9,11 @@ use Supplycart\EInvoice\Enums\OAuthScope;
 
 final class IdentityService
 {
-    public const SANDBOX_IDENTITY_BASE_URL = 'https://preprod-api.myinvois.hasil.gov.my/connect/token';
-    public const PRODUCTION_IDENTITY_BASE_URL = 'https://api.myinvois.hasil.gov.my/connect/token';
-
-    private string $authToken = '';
     private string $baseUrl = '';
 
     public function __construct(private EInvoiceClient $client)
     {
-        $this->baseUrl = $client->getIsProd() ? self::PRODUCTION_IDENTITY_BASE_URL : self::SANDBOX_IDENTITY_BASE_URL;
-    }
-
-    public function getAuthToken(): string
-    {
-        return $this->authToken;
-    }
-
-    public function setAuthToken(string $newAuthToken): void
-    {
-        $this->authToken = $newAuthToken;
+        $this->baseUrl = $client->getBaseUrl() . '/connect/token';
     }
 
     public function login(

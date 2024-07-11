@@ -21,8 +21,8 @@ use Supplycart\EInvoice\Services\TaxPayerService;
  */
 final class EInvoiceClient
 {
-    private const SANDBOX_BASE_URL = 'https://preprod.myinvois.hasil.gov.my';
-    private const PRODUCTION_BASE_URL = 'https://myinvois.hasil.gov.my';
+    public const SANDBOX_BASE_URL = 'https://preprod-api.myinvois.hasil.gov.my';
+    public const PRODUCTION_BASE_URL = 'https://api.myinvois.hasil.gov.my';
 
     private ClientInterface $httpClient;
     private array $options = [];
