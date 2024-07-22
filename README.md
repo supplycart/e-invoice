@@ -1,7 +1,7 @@
 To install, run:
 
 ```zsh
-$ composer require klsheng/myinvois-php-sdk "*"
+$ composer require supplycart/e-invoice "*"
 ```
 
 ## Usage with Laravel (tested on Laravel 11)
