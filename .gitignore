@@ -1,0 +1,6 @@
+/vendor
+.DS_Store
+.vapor
+.commit_hash
+.php-cs-fixer.cache
+.phpunit.cache
