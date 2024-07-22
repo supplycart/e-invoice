@@ -1,7 +1,7 @@
 To install, run:
 
 ```zsh
-$ composer require supplycart/e-invoice "*"
+$ composer require supplycart/e-invoice
 ```
 
 ## Usage with Laravel (tested on Laravel 11)
