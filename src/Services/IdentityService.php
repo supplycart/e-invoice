@@ -45,7 +45,7 @@ final class IdentityService
         return $response;
     }
 
-    private function setOnBehalfOf(string $onBehalfOf)
+    public function setOnBehalfOf(string $onBehalfOf)
     {
         $headers = $this->client->getOption('headers');
 
