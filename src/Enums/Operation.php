@@ -7,7 +7,7 @@ enum Operation: string
     case LOGIN = 'login';
     case SET_ACCESS_TOKEN = 'setAccessToken';
     case GET_ACCESS_TOKEN = 'getAccessToken';
-    case SET_ON_BEHALF_OF = 'setOnbehalfof';
+    case SET_ON_BEHALF_OF = 'setOnBehalfOf';
     case GET_ALL_DOCUMENT_TYPES = 'getAllDocumentTypes';
     case GET_DOCUMENT_TYPE = 'getDocumentType';
     case GET_DOCUMENT_TYPE_VERSION = 'getDocumentTypeVersion';
